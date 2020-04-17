@@ -1,0 +1,27 @@
+Sets:
+	Writing O(1), writing N elements - O(N)
+	Reading elements - O(N)
+
+Sorted sets:
+	Unnesesary in this task
+
+Lists:
+	Writing O(1), writing N elements - O(N)
+	Reading elements - O(N), but we need to know lists length
+
+Strings:
+	Writing O(1), writing N elements - O(N)
+	Reading elements - O(N)
+
+Hashes:
+	Writing O(1), writing N elements - O(N)
+	Reading elements - O(N)
+
+Bitmaps and HyperLogLogs:
+	Don't fit the task
+
+
+
+I made some tests using 5000 links in one POST request to find the best way to write and read data
+And Sets were the fastest and the easiest way to do it
+	
