@@ -1,9 +1,9 @@
 '''
 We need decorator `@api_view`, which is used for writing function-based views with REST framework
 Takes a list of allowed methods for the view as an argument
-If method is not allowed, it raises Exseption
+If method is not allowed, it raises exception
 It based on 'rest_framework.views.APIView' class
-That class has 'exception_handler' funtction that returns Response with "detail" line in it
+That class has 'exception_handler' function that returns Response with "detail" line in it
 Tasks says that we need "status" line
 So we need to change "detail" to "status"
 But I decided to let "detail" line stay, so I won't need to send changed DRF code you will run
@@ -26,9 +26,9 @@ import time
 redis_db = redis.StrictRedis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=0)
 
 '''
-function to check if link is valid
+function checks if link is valid
 django.core.validators.URLValidator would raise an error if link is "funbox.ru"
-So I added 'http://' to exclude this
+so I added 'http://' to exclude this
 '''
 def is_valid_link(url):
 	if re.match(r'^(?:http|ftp)s?://', url) is None:
@@ -85,8 +85,7 @@ def visited_links(request):
 	response = {
 		"status": "ok"
 	}
-	status = 200
-	return Response(response, status=status)
+	return Response(response, status = 200)
 	
 			
 		
