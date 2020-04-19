@@ -5,4 +5,4 @@
 Если у Вас другие настройки Redis, то измените переменные REDIS_HOST и REDIS_PORT в файле funbox_testapp.settings.py
 
 Для работы веб приложения необходимо наличие библиотек django, djangorestframework, redis.
-Для запуска перейдите в расоложение проекта и введите python manage.py runserver.
+Для запуска перейдите в расположение проекта и введите в консоли python manage.py runserver.
